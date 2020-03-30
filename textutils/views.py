@@ -56,7 +56,7 @@ def analyze(request):
         # Analyze the text
         return render(request, 'analyze.html', params)           
     
-    # If nothing is on then this code will execute.
+    # If nothing is on then this code will execute and it will return the error message
     else:
         return HttpResponse("Error")
 
